@@ -7,3 +7,15 @@ Go to http://localhost:4502/system/console/jmx/com.adobe.aem.core.email.jmx%3Aty
 Provide the necessary information in the attributes and click send()
 
 Alternatively you can inline everthing in the other send() function
+
+## Archetype 
+
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=36 \
+ -D appTitle="Email Service" \
+ -D appId="emailservice" \
+ -D groupId="com.adobe.aem" \
+ -D artifactid="email-service" \
+ -D aemVersion="6.5.12"
